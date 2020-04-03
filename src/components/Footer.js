@@ -1,6 +1,4 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import { setFilter } from '../actions'
 
 const Footer = ({action})=>(
     <div>
@@ -11,8 +9,4 @@ const Footer = ({action})=>(
     </div>
 )
 
-const mapDispatchToProps = dispatch => ({
-    action: type => dispatch(setFilter(type))
-})
-
-export default connect(null, mapDispatchToProps)(Footer)
+export default Footer

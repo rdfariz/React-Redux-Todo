@@ -1,8 +1,8 @@
 import React from 'react';
 import '../App.css';
-import Todos from './Todos'
+import Todos from '../containers/Todos'
 import AddTodo from './AddTodo'
-import Footer from './Footer'
+import Footer from '../containers/FilterLink'
 
 function App() {
   return (
