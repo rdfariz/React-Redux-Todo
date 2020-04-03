@@ -5,11 +5,14 @@ const todos = (state = [], action) => {
                 ...state,
                 {
                     id: action.id,
-                    text: action.text
+                    text: action.text,
+                    completed: false
                 }
             ]
             break;
-    
+        case "TOGGLE_TODO":
+            return state.map(el=> (el.id == action.id) ? {...el, completed: !el.completed} : el)
+            break;
         default:
             return state
             break;
