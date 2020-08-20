@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.buttons button{
+  width: 10rem;
+  padding: .5rem;
+  border: none;
+  border-bottom: 4px solid #FFA500;
+  border-top: 4px solid #FFA500;
+  border-right: 4px solid #FFA500;
+  border-left: 4px solid #FFA500;
+  color: #252934;
+  background: #fafafa;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 10px;
+  
+}
+
+.buttons button:hover {
+  background: #FFA500;
+  color: #fafafa;
+}
